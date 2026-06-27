@@ -1,3 +1,11 @@
+<?php
+require_once '../includes/auth.php';
+requireRole(['admin', 'manager']);
+// Admins and managers can manage products
+// Customers get redirected
+?>
+
+
 
 <?php
 session_start();

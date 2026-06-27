@@ -1,4 +1,13 @@
 <?php
+require_once '../includes/auth.php';
+requireRole('admin');
+// Only admins reach this point
+// Everyone else gets redirected to denied.php
+?>
+
+
+
+<?php
 $pageTitle = 'Dashboard | ZuriMart Admin';
 require_once '../includes/header.php';
 ?>
